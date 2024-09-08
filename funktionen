@@ -1,0 +1,11 @@
+def get_matrix(n, m, value) :
+    matrix = [] #pustoi spisok matritsi
+    for i in range(n): #sozdaem vneshniy cycle dlya kolichestvy strok
+        row=[] #pustoi spisok dlya kazhdoi stroki
+        for j in range(m): #vlozhenniy cycle dlya kolichestva stolbtsov
+            row.append(value) #popolnyaem pustoi spisok znacheniyami value
+        matrix.append(row) #dobavlyem zapolnennuyu ctroku v matritsu
+    return matrix
+
+matrix = get_matrix(3,4,5)
+print(matrix)
